@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="main_city_name">London, GB</string>
+    <string name="main_temperature">25 C</string>
+    <string name="main_weather">Cloudy</string>
+    <string name="main_details">Details</string>
+    <string name="main_humidity">Humidity</string>
+    <string name="main_humidity_value">: 50%</string>
+    <string name="main_maxTemp">Max. Temp.</string>
+    <string name="main_maxTemp_value">: 25 C</string>
+    <string name="main_minTemp">Min. Temp.</string>
+    <string name="main_minTemp_value">: 20 C</string>
+    <string name="main_pressure">Pressure</string>
+    <string name="main_pressure_value">: 30</string>
+    <string name="main_wind">Wind</string>
+    <string name="main_wind_value">: 7</string>
+</resources>

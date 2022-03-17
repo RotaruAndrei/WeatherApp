@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    android:orientation="vertical"
+    android:background="@color/base">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:padding="7dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_activity_cityEdit"
+            android:background="@drawable/background_file"
+            android:hint="Enter city name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_location_icon"
+            android:layout_marginStart="25dp"/>
+
+        <Button
+            android:id="@+id/weather_activity_searchBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+            android:padding="7dp"
+            app:icon="@drawable/ic_new_search_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_activity_detailsLayout"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_activity_cityTV"
+            android:layout_gravity="center"
+            android:text="@string/main_city_name"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_activity_details_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/weather_activity_details_image"
+                android:src="@drawable/ic_location_icon"
+                android:layout_marginStart="25dp"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weather_activity_temperature_layout"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_temperature_tempValueTV"
+                    android:text="@string/main_temperature"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_temperature_weatherInfoTV"
+                    android:text="@string/main_weather"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_activity_detailsTV"
+            android:text="@string/main_details"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_activity_weather_layout"
+            android:orientation="horizontal"
+            android:layout_marginStart="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/weather_activity_details_title_layout"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_humidity"
+                    android:text="@string/main_humidity"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_maxTemp"
+                    android:text="@string/main_maxTemp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_minTemp"
+                    android:text="@string/main_minTemp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_pressure"
+                    android:text="@string/main_pressure"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_wind"
+                    android:text="@string/main_wind"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/weather_activity_details_titleInfo_layout"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_humidity_value"
+                    android:text="@string/main_humidity_value"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/surface"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_maxTemp_value"
+                    android:text="@string/main_maxTemp_value"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/surface"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_minTemp_value"
+                    android:text="@string/main_minTemp_value"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/surface"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_pressure_value"
+                    android:text="@string/main_pressure_value"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/surface"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather_activity_details_title_wind_value"
+                    android:text="@string/main_wind_value"
+                    android:textSize="24sp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/surface"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
